@@ -46,7 +46,6 @@ public class LieutenantGeneralImpl extends PrivateImpl implements LieutenantGene
             sb.append("  ").append(aPrivate.toString())
                     .append(System.lineSeparator());
         }
-
-        return sb.toString();
+        return sb.toString().trim();
     }
 }

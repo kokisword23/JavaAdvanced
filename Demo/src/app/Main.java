@@ -62,10 +62,10 @@ public class Main {
                         CommandoImpl commando = new CommandoImpl(Integer.parseInt(tokens[1]), tokens[2],
                                 tokens[3], Double.parseDouble(tokens[4]), Corp.valueOf(crp.toUpperCase()));
 
-                        if (tokens.length > 6) {
+                        if (tokens.length > 6 ) {
                             for (int i = 6; i < tokens.length; i += 2) {
                                 String stateStr = tokens[i + 1];
-                                if (stateStr.equals("inProgress") || stateStr.equals("finished")) {
+                                if (stateStr.equals("inProgress") || stateStr.equals("Finished")) {
                                     Mission mission = new Mission(tokens[i], State.valueOf(stateStr.toUpperCase()));
                                     commando.addMission(mission);
                                 }

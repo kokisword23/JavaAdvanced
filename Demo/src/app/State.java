@@ -1,7 +1,7 @@
 package app;
 
 public enum State {
-    INPROGRESS("inProgress"), FINISHED("finished");
+    INPROGRESS("inProgress"), FINISHED("Finished");
 
     private String state;
 
